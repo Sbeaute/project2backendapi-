@@ -18,7 +18,7 @@ require 'action_controller/railtie'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module project2project2backend
+module PROJECT2BACKEND
   # :nodoc:
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified
