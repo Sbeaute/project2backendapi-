@@ -5,7 +5,7 @@ class InventoriesController < ApplicationController
   def index
     @inventories = Inventory.all
 
-    render json: @inventories
+    render json: @inventories, status: :ok
   end
 
   # GET /inventories/1
