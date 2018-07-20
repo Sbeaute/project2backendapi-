@@ -1,5 +1,10 @@
 Rails[![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
+#user TOKEN
+"level10@gmail.com",
+  token: "9c3dc01966aca04c75d2b84a279c5eec",
+  password_digest: "$2a$10$XTBds9VWeT1XHS7/EpWrE.uhcSsSsDcBPihWbBS45T.RPgMOQj67y",
+
 # rails-api-template
 
 A template for starting projects with `rails-api`. Includes authentication.
