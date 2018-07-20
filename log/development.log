@@ -284,3 +284,24 @@ Completed 201 Created in 673ms (Views: 301.5ms | ActiveRecord: 131.8ms)
 
 
 DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/stevenbeaute/Desktop/project2backend /config/initializers/new_framework_defaults.rb:18)
+Started GET "/inventories" for ::1 at 2018-07-20 12:58:36 -0400
+  
+SyntaxError (/Users/stevenbeaute/Desktop/project2backend /config/routes.rb:9: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  post '/sign-up' => 'users#signup'
+       ^
+/Users/stevenbeaute/Desktop/project2backend /config/routes.rb:9: syntax error, unexpected =>, expecting keyword_end
+  post '/sign-up' => 'users#signup'
+                  ^~
+/Users/stevenbeaute/Desktop/project2backend /config/routes.rb:13: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+config/routes.rb:9: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+config/routes.rb:9: syntax error, unexpected =>, expecting keyword_end
+config/routes.rb:13: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/inventories" for ::1 at 2018-07-20 13:03:36 -0400
+Processing by InventoriesController#index as HTML
+  [1m[36mInventory Load (0.9ms)[0m  [1m[34mSELECT "inventories".* FROM "inventories"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.84ms)
+Completed 200 OK in 68ms (Views: 4.5ms | ActiveRecord: 5.1ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/stevenbeaute/Desktop/project2backend /config/initializers/new_framework_defaults.rb:18)
