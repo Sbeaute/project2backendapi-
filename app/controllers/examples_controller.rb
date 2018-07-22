@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-class ExamplesController < OpenReadController
-  before_action :set_example, only: %i[update destroy]
+class ExamplesController < ProtectedController
+  before_action :set_example, only: %i[update destroy,]
 
   # GET /examples
   # GET /examples.json
@@ -14,14 +14,17 @@ class ExamplesController < OpenReadController
   # GET /examples/1
   # GET /examples/1.json
   def show
+    #@example = example.find(params[:id])
     render json: Example.find(params[:id])
   end
 
   # POST /examples
   # POST /examples.json
   def create
-    @example = current_user.examples.build(example_params)
-
+    @example = eaxmple.new(example_params)
+end
+def example_params
+  params.require(:example).permit()
     if @example.save
       render json: @example, status: :created
     else
@@ -43,8 +46,10 @@ class ExamplesController < OpenReadController
   # DELETE /examples/1.json
   def destroy
     @example.destroy
+@example = example.find(params[:id])
+@example.destroy
 
-    head :no_content
+    render json: {}, status: head :no_content
   end
 
   def set_example
