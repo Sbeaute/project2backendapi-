@@ -3,5 +3,6 @@
 class User < ApplicationRecord
   include Authentication
   has_many :examples
+  # it may have to be inventories
   has_many :inventory
 end
