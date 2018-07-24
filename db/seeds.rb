@@ -9,3 +9,4 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+inventory = Inventory.create([{brand: 'Adidas', model: 'Yeezy Boost 350 V2 Beluga' }, {brand: 'Adidas', model: 'Yeezy Boost 350 Turtle Dove'}, {brand: 'Adidas', model: 'Yeezy Boost 700 Waverunners' }, {brand: 'Adidas', model: 'EQT' }, {brand: 'Adidas', model: 'Human Race NMD HU' }])
